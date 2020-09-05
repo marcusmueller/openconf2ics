@@ -9,6 +9,5 @@ json = requests.get(constants.URL).json()
 sessions = json["sessions"]
 ids = sessions.keys()
 
-print(",".join(ids))
 ics = requests.post(constants.ICS_URL, data={"mysessions":",".join(ids)})
 print(ics.text)
