@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
+#  SPDX-License-Identifier: GPL-3.0-or-later
 import constants
 
-import copy
-import dateutil
 import requests
 
 json = requests.get(constants.URL).json()
